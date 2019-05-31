@@ -68,3 +68,19 @@ describe('Ages', function() {
     expect(expectedAge).toEqual(inputAge.venusAge);
   });
 });
+
+describe('Ages', function() {
+  it('output mars age via constructor', function() {
+    let expectedAge = 15;
+    let inputAge = new Ages('1990/02/01');
+    expect(expectedAge).toEqual(inputAge.marsAge);
+  });
+});
+
+describe('Ages', function() {
+  it('output jupiter age via constructor', function() {
+    let expectedAge = 2;
+    let inputAge = new Ages('1990/02/01');
+    expect(expectedAge).toEqual(inputAge.jupiterAge);
+  });
+});

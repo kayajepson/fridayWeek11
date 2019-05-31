@@ -14,14 +14,14 @@ export class Ages{
     get venusAge(){
       return this.ageFinderVenus();
     }
-    //
-    // get marsAge(){
-    //   return ageFinderMars();
-    // }
-    //
-    // get jupiterAge(){
-    //   return ageFinderJupiter();
-    // }
+
+    get marsAge(){
+      return this.ageFinderMars();
+    }
+
+    get jupiterAge(){
+      return this.ageFinderJupiter();
+    }
 
     ageFinderEarth() {
       // let birthdateInput = document.querySelector('input[type="date"]');
@@ -39,21 +39,21 @@ export class Ages{
       let marsAge = Math.floor(this.ageFinderEarth() / .24);
       return (marsAge);
     }
-    
+
     ageFinderVenus() {
       let venusAge = Math.floor(this.ageFinderEarth() / .62);
       return (venusAge);
     }
 
-    // ageFinderMars() {
-    //   let marsAge = Math.floor(this.ageFinderEarth() / 1.88);
-    //   return (marsAge);
-    // }
-    //
-    // ageFinderJupiter() {
-    //   let jupiterAge = Math.floor(this.ageFinderEarth() / 11.86);
-    //   return (jupiterAge);
-    // }
+    ageFinderMars() {
+      let marsAge = Math.floor(this.ageFinderEarth() / 1.88);
+      return (marsAge);
+    }
+
+    ageFinderJupiter() {
+      let jupiterAge = Math.floor(this.ageFinderEarth() / 11.86);
+      return (jupiterAge);
+    }
   }
 
 
