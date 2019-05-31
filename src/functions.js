@@ -23,6 +23,14 @@ export class Ages{
       return this.ageFinderJupiter();
     }
 
+    get maleLife(){
+      return this.lifeExpectencyMale();
+    }
+
+    get femaleLife(){
+      return this.lifeExpectencyFemale();
+    }
+
     ageFinderEarth() {
       // let birthdateInput = document.querySelector('input[type="date"]');
       let birthdateInput = new Date(this.birthdate + ' 00:00:00');
@@ -36,8 +44,8 @@ export class Ages{
     }
 
     ageFinderMercury() {
-      let marsAge = Math.floor(this.ageFinderEarth() / .24);
-      return (marsAge);
+      let mercuryAge = Math.floor(this.ageFinderEarth() / .24);
+      return (mercuryAge);
     }
 
     ageFinderVenus() {
@@ -54,45 +62,18 @@ export class Ages{
       let jupiterAge = Math.floor(this.ageFinderEarth() / 11.86);
       return (jupiterAge);
     }
+
+    lifeExpectencyMale() {
+      let earthAge = this.ageFinderEarth();
+      let lifeExpectencyMale = 79 - earthAge;
+      return (lifeExpectencyMale);
+    }
+
+    lifeExpectencyFemale() {
+      let earthAge = this.ageFinderEarth();
+      let lifeExpectencyFemale = 84 - earthAge;
+      return (lifeExpectencyFemale);
+    }
+
+
   }
-
-
-
-
-
-// export function ageFinderEarth() {
-//   // let birthdateInput = document.querySelector('input[type="date"]');
-//   let birthdateInput = new Date('1990-02-17T00:00:00');
-//   // let birthdate = new Date(birthdateInput.value);
-//   let birthdateMilli = birthdateInput.getTime();
-//   let today = Date.now();
-//   let ageMillis = today - birthdateMilli;
-//   let age = new Date(ageMillis);
-//   let ageUTC = Math.abs(age.getUTCFullYear() - 1970);
-//   return (ageUTC);
-// }
-//
-// // export function ageFinderMercury() {
-// //   let marsAge = Math.floor(ageFinderEarth() / .24);
-// //   return (marsAge);
-// // }
-//
-// export function ageFinderMercury() {
-//   let marsAge = Math.floor(this.getAge / .24);
-//   return (marsAge);
-// }
-//
-// export function ageFinderVenus() {
-//   let venusAge = Math.floor(ageFinderEarth() / .62);
-//   return (venusAge);
-// }
-//
-// export function ageFinderMars() {
-//   let marsAge = Math.floor(ageFinderEarth() / 1.88);
-//   return (marsAge);
-// }
-//
-// export function ageFinderJupiter() {
-//   let jupiterAge = Math.floor(ageFinderEarth() / 11.86);
-//   return (jupiterAge);
-// }
