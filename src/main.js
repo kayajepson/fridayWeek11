@@ -24,6 +24,5 @@ $(document).ready(function() {
     $("#jupiter").text(jupiter).show();
     $("#male").text(male).show();
     $("#female").text(female).show();
-    // console.log(results);
   });
 });
