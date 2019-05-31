@@ -14,3 +14,18 @@ export function ageFinderMercury() {
   let marsAge = Math.floor(ageFinderEarth() / .24);
   return (marsAge);
 }
+
+export function ageFinderVenus() {
+  let venusAge = Math.floor(ageFinderEarth() / .62);
+  return (venusAge);
+}
+
+export function ageFinderMars() {
+  let marsAge = Math.floor(ageFinderEarth() / 1.88);
+  return (marsAge);
+}
+
+export function ageFinderJupiter() {
+  let jupiterAge = Math.floor(ageFinderEarth() / 11.86);
+  return (jupiterAge);
+}
