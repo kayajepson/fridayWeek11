@@ -3,6 +3,7 @@ import { ageFinderMercury } from './../src/functions.js';
 import { ageFinderVenus } from './../src/functions.js';
 import { ageFinderMars } from './../src/functions.js';
 import { ageFinderJupiter } from './../src/functions.js';
+import { earthAge } from './../src/functions.js';
 
 describe('ageFinderEarth', function() {
   it('should test if entering your birthday returns your Earth age', function() {
@@ -40,6 +41,14 @@ describe('ageFinderJupiter', function() {
   it('should test if entering your birthday returns your Jupiter age', function() {
     let expectedAge = 2;
     let inputAge = ageFinderJupiter();
+    expect(expectedAge).toEqual(inputAge);
+  });
+});
+
+describe('earthAge', function() {
+  it('output earth age via constructor', function() {
+    let expectedAge = 29;
+    let inputAge = new earthAge('1990/02/01');
     expect(expectedAge).toEqual(inputAge);
   });
 });
