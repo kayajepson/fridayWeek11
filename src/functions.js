@@ -9,3 +9,8 @@ export function ageFinderEarth() {
   let ageUTC = Math.abs(age.getUTCFullYear() - 1970);
   return (ageUTC);
 }
+
+export function ageFinderMercury() {
+  let marsAge = Math.floor(ageFinderEarth() / .24);
+  return (marsAge);
+}
