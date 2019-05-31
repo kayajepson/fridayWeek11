@@ -9,6 +9,7 @@ $(document).ready(function() {
     event.preventDefault();
     let userInput = document.querySelector('input[type="date"]');
     let userBday = new Date(userInput.value);
+    console.log(userBday);
     let userCalc = new Ages(userBday);
 
     let earth = userCalc.earthAge;

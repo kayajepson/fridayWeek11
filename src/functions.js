@@ -117,18 +117,18 @@ class Ages{
   lifeExpectencyMaleMercury() {
     let mercuryAge = this.ageFinderMercury();
     if (mercuryAge > 79) {
-      return (mercuryAge - 79);
-    } else {
       return (79 - mercuryAge);
+    } else {
+      return (mercuryAge - 79);
     }
   }
 
   lifeExpectencyFemaleMercury() {
     let mercuryAge = this.ageFinderMercury();
     if (mercuryAge > 84) {
-      return (mercuryAge - 84);
-    } else {
       return (84 - mercuryAge);
+    } else {
+      return (mercuryAge - 84);
     }
   }
 
