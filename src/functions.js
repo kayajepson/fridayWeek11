@@ -33,7 +33,8 @@ export class Ages{
 
   ageFinderEarth() {
     // let birthdateInput = document.querySelector('input[type="date"]');
-    let birthdateInput = new Date(this.birthdate + ' 00:00:00');
+    // let birthdateInput = new Date(this.birthdate + ' 00:00:00');
+    let birthdateInput = this.birthdate;
     // let birthdate = new Date(birthdateInput.value);
     let birthdateMilli = birthdateInput.getTime();
     let today = Date.now();
