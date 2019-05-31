@@ -9,9 +9,9 @@ $(document).ready(function() {
     event.preventDefault();
     let userInput = document.querySelector('input[type="date"]');
     console.log("formIn",userInput);
-    let userBday = new Date(userInput.value);
+    let userBday = new Date(userInput.value  + "T:00:00:00");
     console.log("date",userBday);
-    let test = userBday.getUTCDay();
+    let test = userBday.getMilliseconds();
     console.log(test);
     let userCalc = new Ages(test);
     console.log("agesobj",userCalc);
