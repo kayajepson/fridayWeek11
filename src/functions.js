@@ -1,4 +1,4 @@
-export class Ages{
+class Ages{
   constructor(birthdate){
     this.birthdate = birthdate;
   }
@@ -10,7 +10,7 @@ export class Ages{
   get mercuryAge(){
     return this.ageFinderMercury();
   }
-  //
+
   get venusAge(){
     return this.ageFinderVenus();
   }
@@ -34,7 +34,7 @@ export class Ages{
   ageFinderEarth() {
     // let birthdateInput = document.querySelector('input[type="date"]');
     // let birthdateInput = new Date(this.birthdate + ' 00:00:00');
-    let birthdateInput = this.birthdate;
+    const birthdateInput = this.birthdate;
     // let birthdate = new Date(birthdateInput.value);
     let birthdateMilli = birthdateInput.getTime();
     let today = Date.now();
@@ -81,4 +81,8 @@ export class Ages{
       return (84 - earthAge);
     }
   }
+}
+
+module.exports = {
+  Ages: Ages
 }
