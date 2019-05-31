@@ -17,12 +17,20 @@ $(document).ready(function() {
     let jupiter = userCalc.jupiterAge;
     let male = userCalc.maleLife;
     let female = userCalc.femaleLife;
+    let sex = $("#sex").val();
     $("#earth").text(earth).show();
     $("#mercury").text(mercury).show();
     $("#venus").text(venus).show();
     $("#mars").text(mars).show();
     $("#jupiter").text(jupiter).show();
-    $("#male").text(male).show();
-    $("#female").text(female).show();
+
+    if (sex == "male") {
+      $("#male").text(male).show();
+      $("#maleLabel").show();
+    } else {
+      $("#female").text(female).show();
+      $("#femaleLabel").show();
+    }
+
   });
 });

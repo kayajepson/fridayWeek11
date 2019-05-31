@@ -16,3 +16,11 @@ p, h1, h3, h5 {
 .row1 {
 margin-top: 5%;
 }
+
+#male, #maleLabel {
+  display: none;
+}
+
+#female, #femaleLabel {
+  display: none;
+}

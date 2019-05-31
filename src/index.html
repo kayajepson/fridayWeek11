@@ -17,6 +17,10 @@
           <h3><label for="dayDate">Enter your birthdate:</label></h3>
           <input id="date" type="date" value="">
         </div>
+        <select name="sex" id="sex">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+        </select>
         <button type="submit" class="btn btn-info">Find out!</button>
       </form>
       <div>
@@ -26,8 +30,8 @@
         <p>Venus Age: <span id="venus"></span></p>
         <p>Mars Age: <span id="mars"></span></p>
         <p>Jupiter Age: <span id="jupiter"></span></p>
-        <p>Male Life Expectency: <span id="male"></span></p>
-        <p>Female Life Expectency: <span id="female"></span></p>
+        <p id="maleLabel">Male Life Expectency: <span id="male"></span></p>
+        <p id="femaleLabel">Female Life Expectency: <span id="female"></span></p>
       </div>
     </div>
     <div class="column"></div>
