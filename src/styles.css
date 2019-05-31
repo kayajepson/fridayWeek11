@@ -5,7 +5,7 @@ body {
   text-align: center;
 }
 
-p, h1, h3, h5 {
+p, h1, h3, h5, h6 {
   color: #FFFFFF;
 }
 
@@ -17,10 +17,10 @@ p, h1, h3, h5 {
 margin-top: 5%;
 }
 
-#male, #maleLabel {
+#male, .maleLabel {
   display: none;
 }
 
-#female, #femaleLabel {
+#female, .femaleLabel {
   display: none;
 }

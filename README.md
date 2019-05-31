@@ -13,6 +13,7 @@ _A program that will determines a user’s age based on a planet’s solar years
 | The program should take in an Earth age and return it in Venus years |29 | 46 |
 | The program should take in an Earth age and return it in Mars years | 29 | 15 |
 | The program should take in an Earth age and return it in Jupiter years | 29 | 2 |
+| The program should take in a gender and return life expectancy (based on age: 29) | female | 55 years |
 
 ## Setup/Installation Requirements
 

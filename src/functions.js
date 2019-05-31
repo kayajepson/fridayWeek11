@@ -23,12 +23,44 @@ class Ages{
     return this.ageFinderJupiter();
   }
 
-  get maleLife(){
-    return this.lifeExpectencyMale();
+  get maleLifeEarth(){
+    return this.lifeExpectencyMaleEarth();
   }
 
-  get femaleLife(){
-    return this.lifeExpectencyFemale();
+  get femaleLifeEarth(){
+    return this.lifeExpectencyFemaleEarth();
+  }
+
+  get maleLifeMercury(){
+    return this.lifeExpectencyMaleMercury();
+  }
+
+  get femaleLifeMercury(){
+    return this.lifeExpectencyFemaleMercury();
+  }
+
+  get maleLifeVenus(){
+    return this.lifeExpectencyMaleVenus();
+  }
+
+  get femaleLifeVenus(){
+    return this.lifeExpectencyFemaleVenus();
+  }
+
+  get maleLifeMars(){
+    return this.lifeExpectencyMaleMars();
+  }
+
+  get femaleLifeMars(){
+    return this.lifeExpectencyFemaleMars();
+  }
+
+  get maleLifeJupiter(){
+    return this.lifeExpectencyMaleJupiter();
+  }
+
+  get femaleLifeJupiter(){
+    return this.lifeExpectencyFemaleJupiter();
   }
 
   ageFinderEarth() {
@@ -64,7 +96,7 @@ class Ages{
     return (jupiterAge);
   }
 
-  lifeExpectencyMale() {
+  lifeExpectencyMaleEarth() {
     let earthAge = this.ageFinderEarth();
     if (earthAge > 79) {
       return (earthAge - 79);
@@ -73,7 +105,7 @@ class Ages{
     }
   }
 
-  lifeExpectencyFemale() {
+  lifeExpectencyFemaleEarth() {
     let earthAge = this.ageFinderEarth();
     if (earthAge > 84) {
       return (earthAge - 84);
@@ -81,6 +113,79 @@ class Ages{
       return (84 - earthAge);
     }
   }
+
+  lifeExpectencyMaleMercury() {
+    let mercuryAge = this.ageFinderMercury();
+    if (mercuryAge > 79) {
+      return (mercuryAge - 79);
+    } else {
+      return (79 - mercuryAge);
+    }
+  }
+
+  lifeExpectencyFemaleMercury() {
+    let mercuryAge = this.ageFinderMercury();
+    if (mercuryAge > 84) {
+      return (mercuryAge - 84);
+    } else {
+      return (84 - mercuryAge);
+    }
+  }
+
+  lifeExpectencyMaleMars() {
+    let marsAge = this.ageFinderMars();
+    if (marsAge > 79) {
+      return (marsAge - 79);
+    } else {
+      return (79 - marsAge);
+    }
+  }
+
+  lifeExpectencyFemaleMars() {
+    let marsAge = this.ageFinderMars();
+    if (marsAge > 84) {
+      return (marsAge - 84);
+    } else {
+      return (84 - marsAge);
+    }
+  }
+
+  lifeExpectencyMaleVenus() {
+    let venusAge = this.ageFinderVenus();
+    if (venusAge > 79) {
+      return (venusAge - 79);
+    } else {
+      return (79 - venusAge);
+    }
+  }
+
+  lifeExpectencyFemaleVenus() {
+    let venusAge = this.ageFinderVenus();
+    if (venusAge > 84) {
+      return (venusAge - 84);
+    } else {
+      return (84 - venusAge);
+    }
+  }
+
+  lifeExpectencyMaleJupiter() {
+    let jupiterAge = this.ageFinderJupiter();
+    if (jupiterAge > 79) {
+      return (jupiterAge - 79);
+    } else {
+      return (79 - jupiterAge);
+    }
+  }
+
+  lifeExpectencyFemaleJupiter() {
+    let jupiterAge = this.ageFinderJupiter();
+    if (jupiterAge > 84) {
+      return (jupiterAge - 84);
+    } else {
+      return (84 - jupiterAge);
+    }
+  }
+
 }
 
 module.exports = {

@@ -10,13 +10,26 @@ $(document).ready(function() {
     let userInput = document.querySelector('input[type="date"]');
     let userBday = new Date(userInput.value);
     let userCalc = new Ages(userBday);
+
     let earth = userCalc.earthAge;
     let mercury = userCalc.mercuryAge;
     let venus = userCalc.venusAge;
     let mars = userCalc.marsAge;
     let jupiter = userCalc.jupiterAge;
-    let male = userCalc.maleLife;
-    let female = userCalc.femaleLife;
+
+    let maleEarth = userCalc.maleLifeEarth;
+    let maleMercury = userCalc.maleLifeMercury;
+    let maleVenus = userCalc.maleLifeVenus;
+    let maleMars = userCalc.maleLifeMars;
+    let maleJupiter = userCalc.maleLifeJupiter;
+
+    let femaleEarth = userCalc.femaleLifeEarth;
+    let femaleMercury = userCalc.femaleLifeMercury;
+    let femaleVenus = userCalc.femaleLifeVenus;
+    let femaleMars = userCalc.femaleLifeMars;
+    let femaleJupiter = userCalc.femaleLifeJupiter;
+
+    // let female = userCalc.femaleLifeEarth;
     let sex = $("#sex").val();
     $("#earth").text(earth).show();
     $("#mercury").text(mercury).show();
@@ -25,11 +38,19 @@ $(document).ready(function() {
     $("#jupiter").text(jupiter).show();
 
     if (sex == "male") {
-      $("#male").text(male).show();
-      $("#maleLabel").show();
+      $(".maleLabel").show();
+      $("#maleEarth").text(maleEarth).show();
+      $("#maleMercury").text(maleMercury).show();
+      $("#maleVenus").text(maleVenus).show();
+      $("#maleMars").text(maleMars).show();
+      $("#maleJupiter").text(maleJupiter).show();
     } else {
-      $("#female").text(female).show();
-      $("#femaleLabel").show();
+      $(".femaleLabel").show();
+      $("#femaleEarth").text(femaleEarth).show();
+      $("#femaleMercury").text(femaleMercury).show();
+      $("#femaleVenus").text(femaleVenus).show();
+      $("#femaleMars").text(femaleMars).show();
+      $("#femaleJupiter").text(femaleJupiter).show();
     }
 
   });
