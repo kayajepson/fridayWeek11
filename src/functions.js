@@ -6,10 +6,10 @@ export class Ages{
     get earthAge() {
       return this.ageFinderEarth();
     }
-    //
-    // get mercuryAge(){
-    //   return ageFinderMercury();
-    // }
+
+    get mercuryAge(){
+      return this.ageFinderMercury();
+    }
     //
     // get venusAge(){
     //   return ageFinderVenus();
@@ -35,10 +35,10 @@ export class Ages{
       return (ageUTC);
     }
 
-    // ageFinderMercury() {
-    //   let marsAge = Math.floor(this.ageFinderEarth() / .24);
-    //   return (marsAge);
-    // }
+    ageFinderMercury() {
+      let marsAge = Math.floor(this.ageFinderEarth() / .24);
+      return (marsAge);
+    }
     //
     // ageFinderVenus() {
     //   let venusAge = Math.floor(this.ageFinderEarth() / .62);

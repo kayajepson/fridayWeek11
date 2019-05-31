@@ -52,3 +52,11 @@ describe('Ages', function() {
     expect(expectedAge).toEqual(inputAge.earthAge);
   });
 });
+
+describe('Ages', function() {
+  it('output mercury age via constructor', function() {
+    let expectedAge = 120;
+    let inputAge = new Ages('1990/02/01');
+    expect(expectedAge).toEqual(inputAge.mercuryAge);
+  });
+});
