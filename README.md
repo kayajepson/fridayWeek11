@@ -8,10 +8,11 @@ _A program that will determines a user’s age based on a planet’s solar years
 
 | Behavior | Input | Output |
 | ------------- |:-------------:| -----:|
-| The program should take in an age and return it in Mercury years | 29 | 120 |
-| The program should take in an age and return it in Venus years |29 | 46 |
-| The program should take in an age and return it in Mars years | 29 | 15 |
-| The program should take in an age and return it in Jupiter years | 29 | 2 |
+| The program should take in a birthday and calculate the age in Earth years | 01/01/1990 | 29 |
+| The program should take in an Earth age and return it in Mercury years | 29 | 120 |
+| The program should take in an Earth age and return it in Venus years |29 | 46 |
+| The program should take in an Earth age and return it in Mars years | 29 | 15 |
+| The program should take in an Earth age and return it in Jupiter years | 29 | 2 |
 
 ## Setup/Installation Requirements
 
