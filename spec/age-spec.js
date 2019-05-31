@@ -60,3 +60,11 @@ describe('Ages', function() {
     expect(expectedAge).toEqual(inputAge.mercuryAge);
   });
 });
+
+describe('Ages', function() {
+  it('output venus age via constructor', function() {
+    let expectedAge = 46;
+    let inputAge = new Ages('1990/02/01');
+    expect(expectedAge).toEqual(inputAge.venusAge);
+  });
+});

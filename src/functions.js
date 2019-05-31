@@ -11,9 +11,9 @@ export class Ages{
       return this.ageFinderMercury();
     }
     //
-    // get venusAge(){
-    //   return ageFinderVenus();
-    // }
+    get venusAge(){
+      return this.ageFinderVenus();
+    }
     //
     // get marsAge(){
     //   return ageFinderMars();
@@ -39,12 +39,12 @@ export class Ages{
       let marsAge = Math.floor(this.ageFinderEarth() / .24);
       return (marsAge);
     }
-    //
-    // ageFinderVenus() {
-    //   let venusAge = Math.floor(this.ageFinderEarth() / .62);
-    //   return (venusAge);
-    // }
-    //
+    
+    ageFinderVenus() {
+      let venusAge = Math.floor(this.ageFinderEarth() / .62);
+      return (venusAge);
+    }
+
     // ageFinderMars() {
     //   let marsAge = Math.floor(this.ageFinderEarth() / 1.88);
     //   return (marsAge);
