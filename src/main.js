@@ -8,13 +8,7 @@ $(document).ready(function() {
   $("form#ages").submit(function(event) {
     event.preventDefault();
     let userInput = document.querySelector('input[type="date"]');
-    let userBday = new Date(userInput.value);
-    console.log(userBday);
-    console.log("here", userInput);
-
-    //now that i have moved the instantiation of the Date object to functions.js (so it is within reach of getTime as per Karma's request... even though it was functioning properly over here) I dont have a way of duplicating this type of input into my specs. Console.log(userInput) is spitting out my input form..which I would normally take the value on over here and then pass over into this.birthdate..I'm confused.
-
-    let userCalc = new Ages(userBday);
+    let userCalc = new Ages(userInput.value);
 
     let earth = userCalc.earthAge;
     let mercury = userCalc.mercuryAge;
@@ -34,7 +28,6 @@ $(document).ready(function() {
     let femaleMars = userCalc.femaleLifeMars;
     let femaleJupiter = userCalc.femaleLifeJupiter;
 
-    // let female = userCalc.femaleLifeEarth;
     let sex = $("#sex").val();
     $("#earth").text(earth).show();
     $("#mercury").text(mercury).show();
