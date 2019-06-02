@@ -3,7 +3,7 @@ import { Ages } from './../src/functions.js';
 describe('Ages', function() {
   it('output earth age via constructor', function() {
     let expectedAge = 29;
-    let inputAge = new Ages('1990/02/01');
+    let inputAge = new Ages('Thu Feb 08 1990 16:00:00 GMT-0800 (Pacific Standard Time)');
     expect(expectedAge).toEqual(inputAge.earthAge);
   });
 });
@@ -44,7 +44,7 @@ describe('Ages', function() {
   it('output life expectency for a male in US', function() {
     let expectedAge = 50;
     let inputAge = new Ages('Thu Feb 08 1990 16:00:00 GMT-0800 (Pacific Standard Time)');
-    expect(expectedAge).toEqual(inputAge.maleLife);
+    expect(expectedAge).toEqual(inputAge.maleLifeEarth);
   });
 });
 
@@ -52,6 +52,6 @@ describe('Ages', function() {
   it('output life expectency for a female in US', function() {
     let expectedAge = 55;
     let inputAge = new Ages('Thu Feb 08 1990 16:00:00 GMT-0800 (Pacific Standard Time)');
-    expect(expectedAge).toEqual(inputAge.femaleLife);
+    expect(expectedAge).toEqual(inputAge.femaleLifeEarth);
   });
 });

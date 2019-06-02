@@ -66,10 +66,10 @@ class Ages{
   ageFinderEarth() {
     // let birthdateInput = document.querySelector('input[type="date"]');
     // let birthdateInput = new Date(this.birthdate + ' 00:00:00');
-    const birthdateInput = new Date((this.birthdate).value);
-    // const birthdateInput = this.birthdate;
-    // let birthdate = new Date(birthdateInput.value);
-    let birthdateMilli = birthdateInput.getTime();
+    // const birthdateInput = new Date((this.birthdate).value);
+    const birthdateInput = this.birthdate;
+    let birthdate = new Date(birthdateInput);
+    let birthdateMilli = birthdate.getTime();
     let today = Date.now();
     let ageMillis = today - birthdateMilli;
     let age = new Date(ageMillis);
